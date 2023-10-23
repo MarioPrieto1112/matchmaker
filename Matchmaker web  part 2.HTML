@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--
+    Author: Mario Prieto 
+    Project: MatchmakerWeb - Part 2 
+
+    All rights reserved. 
+-->
+<head>
+    <meta charset="UTF-8">
+    <title>Matchmaker</title>
+</head>
+
+<body> 
+    <h1>Matchmaker </h1>
+    <p>Instructions...</p>
+
+<!-- Reference for HTML "option" tabs/fields: https://www.w3schools.com/tags/tag_option.asp -->
+
+<label>Baseball is the greatest sport of all time.</label><br />
+<select id="q1">
+  <option value="5">Strongly Agree</option>
+  <option value="4">Agree</option>
+  <option value="3">Neither agree nor disagree</option>
+  <option value="2">Disagree</option>
+  <option value="1">Strongly Disagree</option>
+</select>
+<br /><br />
+<label>Country music is the best type of music.</label><br />
+<select id="q1">
+  <option value="5">Strongly Agree</option>
+  <option value="4">Agree</option>
+  <option value="3">Neither agree nor disagree</option>
+  <option value="2">Disagree</option>
+  <option value="1">Strongly Disagree</option>
+</select>
+
+<br /><br /><br />
+<button onclick="CalculateCompatability()">Calculate Compatability</button>
+<p id="Compatability"></p>
+
+<script>
+console.log("Starting Matchmaker Lite...")
+
+function CalculateCompatibility() {
+    console.log("CalculateCompatibility()")
+
+    document.getElementById("compatability").innerHTML ="Your compatability is...";
+}
+</script>
+
+</body>
+</html>
